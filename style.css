@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    padding: 25px 70px;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--Background-Color, #191C26);
+    position: fixed;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.logo {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: var(--Gradient, linear-gradient(90deg, #FD005B 0%, #BB00FD 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-right: 140px;
+}
+
+nav ul li {
+    list-style: none;
+    color: var(--White, #FFF);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* header {
+    height: 100vh;
+} */
+
+.section-one {
+    width: fixed 1440px;
+    height: fixed 715px;
+    /* flex-shrink: 0; */
+    display: flex;
+    flex-direction: column;
+    padding-top: 181px;
+    padding-bottom: 192px;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 30px;
+    background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url(https://images.unsplash.com/photo-1578575437130-527eed3abbec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hpcHBpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.section-one h3 {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 1210px;
+}
+
+.section-one div {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.section-one p {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 745px;
+}
+
+.btn {
+    color: var(--White, #FFF);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 40px;
+    border: 2px solid;
+    display: inline-flex;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+    transition: all ease-in-out 0.4s;
+}
+
+.btn:hover {
+    color: black;
+    background: linear-gradient(to right, #FD005B, #BB00FD, #FD005B);
+}
+
+.section-two {
+    width: fixed 1440px;
+    height: fixed 715px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 140px;
+    background: var(--Background-Color, #191C26);
+    gap: 104px;
+    padding-bottom: 150px;
+}
+
+.section-two .services {
+    position: relative;
+}
+
+.section-two .services h2 {
+    opacity: 0.05;
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.section-two .services p {
+    color: var(--Pink, #FD005B);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    top: 36%;
+    left: 22%;
+}
+
+.services-info {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    gap: 40px;
+}
+
+.services-info div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    color: #ffffff;
+    border: 0.5px solid rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.services-info div iconify-icon {
+    font-size: 5rem;
+}
+
+.services-info div p {
+    font-size: .8rem;
+}
+
+.section-three {
+    width: fixed 1440px;
+    height: fixed 715px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url(https://media.istockphoto.com/id/859526476/photo/plane-trucks-are-flying-towards-the-destination-with-the-brightest.webp?b=1&s=170667a&w=0&k=20&c=0WsWwodB8CwLKqiY59lA5Hems6Ir261LJA93M13U0rU=);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 128px;
+    padding-bottom: 157px;
+    gap: 25px;
+}
+
+.section-three .about {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.section-three .about h2 {
+    opacity: 0.05;
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.section-three .about p {
+    color: var(--Pink, #FD005B);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    top: 36%;
+    right: 20%;
+}
+
+.section-three p {
+    color: #ffffff;
+    padding: 0px 5px;
+}
+
+.about-info {
+    display: grid;
+    grid-template-columns: repeat(3, 420px);
+    padding: 0px 5px;
+    gap: 40px;
+    padding-top: 67px;
+}
+
+.about-info div {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.about-info div span {
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: #FD005B;
+}
+
+.about-info p {
+    font-size: 0.9rem;
+}
+
+.section-four {
+    width: fixed 1440px;
+    height: fixed 5167px;
+    background-color: #191C26;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 140px 0px;
+}
+
+.section-four .gallery {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.section-four .gallery h2 {
+    opacity: 0.05;
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.section-four .gallery p {
+    color: var(--Pink, #FD005B);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    top: 36%;
+    right: 25%;
+}
+
+.image {
+    display: grid;
+    grid-template-columns: repeat(3, 415px);
+    gap: 30px;
+}
+
+img, iframe {
+    width: 414px;
+    height: 350px;
+}
+
+.section-five {
+    width: fixed 1440px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding-top: 140px;
+    /* padding-bottom: 192px; */
+    align-items: center;
+    gap: 50px;
+    background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url(https://media.istockphoto.com/id/1455004192/photo/abstract-digital-landscape-background.webp?b=1&s=170667a&w=0&k=20&c=lZZ62ZcY2R7MtEdWl6dobiP5NEKV5zfIDhOaDfaATIw=);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.section-five .contact-us {
+    position: relative;
+}
+
+.section-five .contact-us h2 {
+    opacity: 0.05;
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.section-five .contact-us p {
+    color: var(--Pink, #FD005B);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    top: 36%;
+    left: 25%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+    border-radius: 10px;
+    border: 0.5px solid rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.10);
+    padding: 88px 65px;
+}
+
+form div {
+    display: flex;
+    gap: 10px;
+}
+
+form div span {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], select {
+    width: 450px;
+    height: 60px;
+    border-radius: 5px;
+    outline: none;
+}
+
+textarea {
+    width: 910px;
+    border-radius: 5px;
+    outline: none;
+}
+button[type="submit"] {
+    height: 60px;
+    border-radius: 30px;
+    background: linear-gradient(to right, #FD005B, #BB00FD);
+    color: var(--White, #FFF);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-style: none;
+}
+
+::placeholder {
+    padding-left: 20px;
+    color: rgba(0, 0, 0, 0.40);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    padding-top: 50px;
+    padding-bottom: 93px;
+}
+
+.contact-info div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-info div iconify-icon {
+    border: 1px solid #FD005B;
+    color: #FD005B;
+    font-size: 1.2rem;
+    padding: 12px;
+    border-radius: 22px;
+}
+
+.footer {
+    display: flex;
+    width: 1347px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    padding: 57px 70px;
+    border-left: none;
+    border-right: none;
+}
+
+.footer h1 {
+    background: var(--Gradient, linear-gradient(90deg, #FD005B 0%, #BB00FD 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
