@@ -1,2 +1,2 @@
 # Logistics
-Logistic Landing Page
+Logistic Landing Page using HTML and CSS
